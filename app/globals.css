@@ -1,0 +1,88 @@
+.neural-menu {
+  position: absolute;
+  z-index: 20;
+  top: 76px;
+  left: 72px;
+  width: min(350px, calc(100vw - 32px));
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 25px;
+  background: rgba(25, 26, 29, 0.96);
+  box-shadow: 0 25px 90px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(26px) saturate(130%);
+}
+
+.mode-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 12px;
+  border: 0;
+  border-radius: 15px;
+  color: #f7f7f8;
+  background: transparent;
+  text-align: left;
+}
+
+.mode-item:hover,
+.mode-item.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.mode-check {
+  width: 22px;
+  color: #dfe8ef;
+  font-size: 20px;
+}
+
+.mode-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.mode-copy strong {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.mode-copy small,
+.thinking-control small {
+  color: #a2a4ab;
+  font-size: 14px;
+}
+
+.thinking-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 7px;
+  padding: 17px 12px 11px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.thinking-control > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.thinking-control select {
+  padding: 7px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  color: white;
+  background: #28292c;
+}
+
+.engine-status {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 14px 0;
+  color: #8d98a6;
+  font-size: 12px;
+}
